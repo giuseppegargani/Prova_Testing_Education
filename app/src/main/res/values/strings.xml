@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Riprova Testing</string>
+    <string name="scritta_toast">Ecco il Toast!!</string>
 </resources>
