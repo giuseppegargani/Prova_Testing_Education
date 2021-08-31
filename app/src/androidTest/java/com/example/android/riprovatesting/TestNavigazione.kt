@@ -11,12 +11,9 @@ import org.junit.runner.RunWith
 class TestNavigazione {
 
     //indica quale attività aprire
-    @get:Rule
-    val activityRule2 = ActivityScenarioRule(MainActivity2::class.java)
+    //@get:Rule
+    //val activityRule2 = ActivityScenarioRule(MainActivity2::class.java)
 
-    //TODO si può iniziare testando la presenza di un fragment in una attività
-
-    //TODO e poi andiamo a testare la UI del fragment
 
 
 }
