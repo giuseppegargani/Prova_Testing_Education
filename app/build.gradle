@@ -53,6 +53,11 @@ dependencies {
     debugImplementation 'androidx.fragment:fragment-testing:1.3.6'
     testImplementation 'junit:junit:4.+'
 
+    //navigazione
+    implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
+    implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
+
+    //testing
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     // Kotlin extensions for androidx.test.ext.junit
     androidTestImplementation("androidx.test.ext:junit-ktx:1.1.3")

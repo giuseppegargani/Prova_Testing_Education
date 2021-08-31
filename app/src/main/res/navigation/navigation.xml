@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/iniziale">
+
+    <fragment
+        android:id="@+id/primo"
+        android:name="com.example.android.riprovatesting.Fragments.Primo"
+        android:label="Primo" >
+        <action
+            android:id="@+id/action_primo_to_secondo"
+            app:destination="@id/secondo"
+            app:popUpTo="@id/primo" />
+        <action
+            android:id="@+id/action_primo_to_terzo"
+            app:destination="@id/terzo"
+            app:popUpTo="@id/iniziale"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondo"
+        android:name="com.example.android.riprovatesting.Fragments.Secondo"
+        android:label="Secondo" />
+    <fragment
+        android:id="@+id/terzo"
+        android:name="com.example.android.riprovatesting.Fragments.terzo"
+        android:label="terzo" />
+    <fragment
+        android:id="@+id/iniziale"
+        android:name="com.example.android.riprovatesting.Fragments.Iniziale"
+        android:label="fragment_iniziale"
+        tools:layout="@layout/fragment_iniziale" >
+        <action
+            android:id="@+id/action_iniziale_to_primo"
+            app:destination="@id/primo" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.android.riprovatesting.Fragments.AboutUs"
+        android:label="AboutUs" />
+</navigation>
