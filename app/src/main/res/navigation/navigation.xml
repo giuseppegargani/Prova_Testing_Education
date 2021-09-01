@@ -26,7 +26,11 @@
     <fragment
         android:id="@+id/terzo"
         android:name="com.example.android.riprovatesting.Fragments.terzo"
-        android:label="terzo" />
+        android:label="terzo" >
+        <argument
+            android:name="numClicks"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/iniziale"
         android:name="com.example.android.riprovatesting.Fragments.Iniziale"
@@ -40,4 +44,9 @@
         android:id="@+id/aboutUs"
         android:name="com.example.android.riprovatesting.Fragments.AboutUs"
         android:label="AboutUs" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.android.riprovatesting.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 </navigation>

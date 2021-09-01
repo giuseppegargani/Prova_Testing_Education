@@ -17,6 +17,10 @@ class terzo : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentTerzoBinding>(inflater, R.layout.fragment_terzo, container, false)
+
+        val args = terzoArgs.fromBundle(requireArguments())
+        binding.numeroClick.text=args.numClicks.toString()
+
         return binding.root
     }
 

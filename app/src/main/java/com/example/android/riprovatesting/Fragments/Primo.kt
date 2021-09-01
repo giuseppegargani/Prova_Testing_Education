@@ -23,7 +23,7 @@ class Primo : Fragment() {
 
         binding.pulsanteAumenta.setOnClickListener {
             numeroClick= aumenta(numeroClick)
-            if (numeroClick>10){it.findNavController().navigate(R.id.action_primo_to_secondo)}
+            if (numeroClick>10){it.findNavController().navigate(PrimoDirections.actionPrimoToSecondo())}
             binding.numeroVisualizzazioni.text=numeroClick.toString()
         }
         binding.pulsanteDiminuisci.setOnClickListener {
@@ -32,7 +32,7 @@ class Primo : Fragment() {
         }
 
         binding.PulsanteTermina.setOnClickListener {
-            it.findNavController().navigate(R.id.action_primo_to_terzo)
+            it.findNavController().navigate(PrimoDirections.actionPrimoToTerzo(numeroClick))
         }
 
         return binding.root
