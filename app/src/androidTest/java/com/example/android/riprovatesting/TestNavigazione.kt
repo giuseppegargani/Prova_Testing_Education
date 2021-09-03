@@ -15,5 +15,4 @@ class TestNavigazione {
     //val activityRule2 = ActivityScenarioRule(MainActivity2::class.java)
 
 
-
 }
