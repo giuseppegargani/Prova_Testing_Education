@@ -24,6 +24,7 @@ import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import androidx.test.espresso.matcher.ViewMatchers.withClassName
+import com.example.android.riprovatesting.MainActivity3Test
 import org.hamcrest.core.Is.`is`
 
 
@@ -41,6 +42,10 @@ import org.hamcrest.core.Is.`is`
     ESEMPI DI TABNINE!!!!
     ISASSIGNABLEFROM:
     https://www.tabnine.com/code/java/methods/android.support.test.espresso.matcher.ViewMatchers/isAssignableFrom
+    SI POSSONO COMPIERE TEST COMBINATI (anche con try catch) che fondono test singoli
+    -TEST SUITES:
+    https://stackoverflow.com/questions/46878733/android-espresso-how-to-create-test-suite-which-may-launch-separate-test-classe
+    https://medium.com/mesmerhq/accelerate-your-android-espresso-testing-by-grouping-relevant-tests-f492d4ff8809
  */
 
 @MediumTest

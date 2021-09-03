@@ -6,4 +6,6 @@
     <string name="descrizione" />
     <string name="about_us">Riguardo a noi</string>
     <string name="descrizione_about_us">Questo è quello che facciamo</string>
+    <string name="share" >Condividi</string>
+    <string name="share_text">Ciao, ho cliccato %1$i volte!! </string>
 </resources>
