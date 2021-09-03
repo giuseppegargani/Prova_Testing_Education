@@ -46,6 +46,8 @@ import org.junit.runner.RunWith
     https://developer.android.com/guide/fragments/test
     -SI PUO' PASSARE DA UNA ATTIVITA' AD UN ALTRA CON NAVGRAPH E PASSARE ARGOMENTI!!!
     https://stackoverflow.com/questions/62214514/navigate-from-one-activity-to-another-with-navigation-component
+    https://developer.android.com/guide/navigation/navigation-pass-data#safe-args-global   ARGOMENTI!!!
+
  */
 
 @RunWith(AndroidJUnit4::class)

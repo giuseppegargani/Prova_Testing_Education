@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/primo"
         android:name="com.example.android.riprovatesting.Fragments.Primo"
-        android:label="Primo" >
+        android:label="Scegli il numero">
         <action
             android:id="@+id/action_primo_to_secondo"
             app:destination="@id/secondo"
@@ -22,11 +22,11 @@
     <fragment
         android:id="@+id/secondo"
         android:name="com.example.android.riprovatesting.Fragments.Secondo"
-        android:label="Secondo" />
+        android:label="Limite Massimo" />
     <fragment
         android:id="@+id/terzo"
         android:name="com.example.android.riprovatesting.Fragments.terzo"
-        android:label="terzo" >
+        android:label="Limite inferiore">
         <argument
             android:name="numClicks"
             app:argType="integer" />
@@ -34,8 +34,8 @@
     <fragment
         android:id="@+id/iniziale"
         android:name="com.example.android.riprovatesting.Fragments.Iniziale"
-        android:label="fragment_iniziale"
-        tools:layout="@layout/fragment_iniziale" >
+        android:label="Inizia la sfida"
+        tools:layout="@layout/fragment_iniziale">
         <action
             android:id="@+id/action_iniziale_to_primo"
             app:destination="@id/primo" />
@@ -43,10 +43,5 @@
     <fragment
         android:id="@+id/aboutUs"
         android:name="com.example.android.riprovatesting.Fragments.AboutUs"
-        android:label="AboutUs" />
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.android.riprovatesting.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+        android:label="Riguardo a noi" />
 </navigation>
