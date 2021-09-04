@@ -8,6 +8,7 @@ on:
   pull_request: 
     branches:  
     - master
+    - final
 jobs: 
   build: 
     runs-on: macOS-latest
