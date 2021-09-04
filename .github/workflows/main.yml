@@ -3,13 +3,9 @@
 name: Android CI Testing prima di push
 on: 
   push:
-    branches:
-    - master
-    - main
+    branches: [ master, main ]
   pull_request: 
-    branches:  
-    - master
-    - final
+    branches:  [ master, main ]
 jobs: 
   build: 
     runs-on: macOS-latest
@@ -38,8 +34,8 @@ jobs:
           #java-distribution: temurin
           java-version: ${{ matrix.java_version }}
           
-      - name: Setup Android SDK Tools
-        uses: android-actions/setup-android@v2.0.2
+      #- name: Setup Android SDK Tools
+      #  uses: android-actions/setup-android@v2.0.2
           
       # Necessario oppure già compreso?
       - name: Install Android SDK
