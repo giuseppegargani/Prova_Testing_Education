@@ -5,7 +5,7 @@ on:
   push:
     branches: [ final ]
   pull_request:
-    branches: [ master ]
+    branches: [ final ]
 jobs: 
   build: 
     runs-on: macOS-latest
