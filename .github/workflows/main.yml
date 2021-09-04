@@ -3,11 +3,11 @@
 name: Android CI Testing prima di push
 on: 
   push:
-    branches:  final 
-    #- final
+    branches:
+    - master
   pull_request: 
-    branches:  final 
-    #- master
+    branches:  
+    - master
 jobs: 
   build: 
     runs-on: macOS-latest
