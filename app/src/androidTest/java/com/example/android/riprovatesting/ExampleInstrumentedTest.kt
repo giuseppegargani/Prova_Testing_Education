@@ -82,7 +82,7 @@ class HelloWorldEspressoTest {
 
     //verifica altre caratteristiche di base della View
     //ma c'è un sistema per riferirsi ad una identica view? istanziare una View programmaticamente e verificarla
-    @Test
+    /*@Test
     fun controllaOrientamentoLayout(){
         val scenario = activityRule.scenario
         scenario.onActivity {
@@ -92,7 +92,7 @@ class HelloWorldEspressoTest {
             assertEquals(actualLayoutWidth, expectedWidth)
             Log.d("customView", actualLayoutWidth)
         }
-    }
+    }*/
 
     //controlla i parametri del layout
     @Test
