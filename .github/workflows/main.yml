@@ -51,8 +51,8 @@ jobs:
       #  run: chmod +rwx ./gradlew
         
       # Forse e' un doppione di quello sopra
-      - name: Gradle Wrapper Validation
-        uses: gradle/wrapper-validation-action@v1
+      #- name: Gradle Wrapper Validation
+      #  uses: gradle/wrapper-validation-action@v1
         
       - name: Configure Gradle
         # Initial gradle configuration, install dependencies, etc
