@@ -20,13 +20,13 @@ class terzo : Fragment() {
         val args = terzoArgs.fromBundle(requireArguments())
         binding.numeroClick.text=args.numClicks.toString()
 
-        setHasOptionsMenu(true)
+        //setHasOptionsMenu(true)
 
         return binding.root
     }
 
     // Showing the Share Menu Item Dynamically
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+    /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater?.inflate(R.menu.condivisione_menu, menu)
         // check if the activity resolves
@@ -55,5 +55,5 @@ class terzo : Fragment() {
     // Starting an Activity with our new Intent
     private fun shareSuccess() {
         startActivity(getShareIntent())
-    }
+    }*/
 }
