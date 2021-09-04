@@ -3,8 +3,8 @@
 name: Android CI Testing prima di push
 on: 
   push:
-    branches: #[ master, final]
-    - final
+    #branches: #[ master, final]
+    #- final
   #pull_request:
     #branches: 
     #- master
