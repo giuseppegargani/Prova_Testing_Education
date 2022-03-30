@@ -63,19 +63,25 @@ jobs:
       
       - name: Testa
         run: ./gradlew test
+        
+      #Proviamo a mettere diversi tipi di test anche singoli!!!!
+      - name: Testa Singolo
+        run: ./gradlew test --test Example.UnitTest.testAggiunta
       
       #vecchio test
-      - name: Run Instrumentation Tests (reactivecircus)
-        uses: reactivecircus/android-emulator-runner@v2.6.1
-        with:
-          api-level: ${{ matrix.api-level }}
-          arch: ${{ matrix.arch }}
+      #- name: Run Instrumentation Tests (reactivecircus)
+        #uses: reactivecircus/android-emulator-runner@v2.6.1
+        #with:
+          #api-level: ${{ matrix.api-level }}
+          #arch: ${{ matrix.arch }}
           #target: default
           #arch: x86
           #profile: Nexus 6
-          script: ./gradlew connectedCheck --stacktrace  
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+          #script: ./gradlew connectedCheck --stacktrace  
+        #env:
+          #ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+          
+      #vecchio vecchio test strumentale (non messo)
       #- name: Run Instrumentation Tests
        # uses: vgaidarji/android-github-actions-emulator@v1.0.1
         #with:
