@@ -64,7 +64,7 @@ jobs:
       #- name: Testa
         #run: ./gradlew test
         
-      #Proviamo a mettere diversi tipi di test anche singoli!!!!
+      #Proviamo a mettere diversi tipi di test anche singoli!!!!!
       - name: Testa Singolo
         run: ./gradlew test --tests Example.UnitTest.testAggiunta
       
