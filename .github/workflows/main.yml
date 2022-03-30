@@ -64,9 +64,12 @@ jobs:
       #- name: Testa
         #run: ./gradlew test
         
+      - name: Primo test singolo
+        run: ./gradlew test --tests com.example.android.riprovatesting.ExampleUnitTest.testAggiunta
+        
       #Proviamo a mettere diversi tipi di test anche singoli!!!!!
       - name: Testa Singolo
-        run: ./gradlew test --tests Example.UnitTest.testAggiunta
+        run: ./gradlew test --tests ExampleUnitTest.testAggiunta
       
       #vecchio test
       #- name: Run Instrumentation Tests (reactivecircus)
