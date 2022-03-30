@@ -64,15 +64,11 @@ jobs:
       #- name: Testa
         #run: ./gradlew test
         
-      - name: verifica test
-        run: ./gradlew help --task :app:test
+      #- name: verifica test
+        #run: ./gradlew help --task :app:test
         
       - name: Primo test singolo
-        run: ./gradlew test --tests ExampleUnitTest.testAggiunta
-        
-      #Proviamo a mettere diversi tipi di test anche singoli!!!!!
-      - name: Testa Singolo
-        run: ./gradlew test --tests ExampleUnitTest.testAggiunta
+        run: ./gradlew testDebugUnitTest --tests ExampleUnitTest.testAggiunta
       
       #vecchio test
       #- name: Run Instrumentation Tests (reactivecircus)
