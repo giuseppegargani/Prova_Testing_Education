@@ -61,12 +61,12 @@ jobs:
       #- name: Costruisci con Gradle
       #  run: ./gradlew build --warning-mode all
       
-      - name: Testa
-        run: ./gradlew test
+      #- name: Testa
+        #run: ./gradlew test
         
       #Proviamo a mettere diversi tipi di test anche singoli!!!!
       - name: Testa Singolo
-        run: ./gradlew test --test Example.UnitTest.testAggiunta
+        run: ./gradlew test --tests Example.UnitTest.testAggiunta
       
       #vecchio test
       #- name: Run Instrumentation Tests (reactivecircus)
