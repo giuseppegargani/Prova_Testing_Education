@@ -68,7 +68,7 @@ jobs:
         #run: ./gradlew help --task :app:test
         
       - name: Primo test singolo
-        run: ./gradlew testDebugUnitTest --tests ExampleUnitTest.testAggiunta
+        run: ./gradlew testDebugUnitTest --tests ExampleUnitTest.primotest
       
       #vecchio test
       #- name: Run Instrumentation Tests (reactivecircus)
