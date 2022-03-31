@@ -95,9 +95,9 @@ jobs:
       - name: Reclaim Memory
         run: ./gradlew --stop && jps|grep -E 'KotlinCompileDaemon|GradleDaemon'| awk '{print $1}'| xargs kill -9
         
-        #Adesso si fanno i check che abbiamo omesso in assemble
-      - name: Final Checks
-        run: ./gradlew check --stacktrace
+        #Adesso si fanno i check che abbiamo omesso in assemble - Vedi articolo per differenza tra check e test!!!!!
+      #- name: Final Checks
+        #run: ./gradlew check --stacktrace
         
       - name: Upload APK
         uses: actions/upload-artifact@v2.2.4
